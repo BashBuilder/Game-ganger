@@ -10,18 +10,18 @@ GET http://localhost:5118/games/1
 
 ### create a new game
 POST http://localhost:5118/games
-Content - Type: application / json
+Content-Type: application/json
 
 {
-  "name" : "Fire",
-   "genreId" : 1,
-    "price" : 4.99,
+  "name" : "God of war",
+   "genreId" : 4,
+    "price" : 34.99,
     "releaseDate" : "2020-12-24"
 }
 
 ### update a game
-PUT http://localhost:5118/games/1
-Content - Type: application / json
+PUT http://localhost:5118/games/2
+Content-Type: application / json
 
 {
   "name" : "Black Ops 2",

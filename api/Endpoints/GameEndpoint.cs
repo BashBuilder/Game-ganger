@@ -109,10 +109,7 @@ namespace api.Endpoints
           return Results.Problem(ex.Message);
         }
       });
-
-
       return group;
-
     }
   }
 }
