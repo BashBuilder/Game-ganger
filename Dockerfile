@@ -12,6 +12,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 WORKDIR /app
 
-COPY --from=build api/published/ ./
+COPY --from=build /app/api/published/ ./
 
 ENTRYPOINT [ "dotnet", "api.dll" ]
