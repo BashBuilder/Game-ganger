@@ -9,7 +9,7 @@ builder.Services.AddSqlite<GameStoreContext>(connectionString);
 
 WebApplication app = builder.Build();
 
-app.MapGet("/health", () => Results.Ok("Server is healthy"));
+app.MapGet("/health", () => Results.Ok("Server is healthy and deployed with docker"));
 app.MapGameEndpoints();
 
 await app.MigrateDbAsync();
