@@ -1,13 +1,13 @@
 using api.Data;
 using api.Endpoints;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("Games");
+string? connectionString = builder.Configuration.GetConnectionString("Games");
 
 builder.Services.AddSqlite<GameStoreContext>(connectionString);
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 app.MapGet("/health", () => Results.Ok("Server is healthy"));
 app.MapGameEndpoints();

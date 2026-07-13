@@ -1,0 +1,12 @@
+**/bin
+**/obj
+**/Properties
+**/.appsettings.Development.json
+**/Dockerfile*
+**/.dockerignore
+**/*.sln
+**/api/bin
+**/api/obj
+**/api/Properties
+**/api/.appsettings.Development.json
+**/*.sln
